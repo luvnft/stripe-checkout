@@ -62,7 +62,7 @@ h4 {
 }
 
 .sr-header__logo {
-  margin-top: 10px; /* Adjust this value as needed */
+  margin-top: 20px; /* Adjust this value as needed */
   margin-bottom: 16px;
 }
 
@@ -85,7 +85,7 @@ h4 {
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 100%; /* Set maximum width to 100% for smaller screens */
   min-width: 250px;
 }
 
