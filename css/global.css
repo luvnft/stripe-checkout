@@ -406,6 +406,50 @@ pre {
     max-width: 100%; /* Set maximum width to 100% for smaller screens */
     margin-right: 0; /* Remove margin for smaller screens */
   }
+
+  .sr-form-row {
+    margin: 16px 0;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .sr-input,
+  .sr-select,
+  input[type="text"],
+  input[type="number"] {
+    height: 40px; /* Reduce the height for smaller screens */
+  }
+
+  .sr-checkbox-label input {
+    margin-right: 4px; /* Adjust margin for checkbox label */
+  }
+
+  .sr-container {
+    flex-direction: column; /* Adjust container layout for smaller screens */
+  }
+
+  .quantity-setter {
+    margin-top: 16px; /* Adjust margin for quantity setter */
+  }
+
+  .quantity-setter input {
+    width: 40px; /* Adjust width for quantity setter input */
+  }
+
+  .fullwidth {
+    width: 100%; /* Set width to 100% for full-width elements */
+  }
+
+  .banner {
+    font-size: 12px; /* Adjust font size for banner */
+    padding: 10px; /* Adjust padding for banner */
+    border-radius: 16px; /* Adjust border-radius for banner */
+  }
 }
 
 /* Pasha styles – Brand-overrides, can split these out */
