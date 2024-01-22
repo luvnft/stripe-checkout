@@ -1,69 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Stripe Checkout Sample</title>
-    <meta name="description" content="A demo of Stripe client-only Checkout" />
+<head>
+  <meta charset="utf-8" />
+  <title>BLK LUV org Donation</title>
+  <meta name="description" content="BLK LUV org uses blockchain tech to show a proof of donations with ONE $LUV currency and a LUV NFT." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/custom.css" /> <!-- Add this line for custom styles -->
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <!-- Load Stripe.js on your website. -->
-    <script src="https://js.stripe.com/v3/"></script>
-  </head>
-
-  <body>
-    <div class="sr-root">
-      <div class="sr-main" style="display: flex;">
-        <header class="sr-header">
-          <div class="sr-header__logo"></div>
-        </header>
+<body>
+  <div class="sr-root">
+    <header class="sr-header">
+      <div class="sr-header__logo">
+        <img src="/blkluv.png" alt="blkluv org" />
+      </div>
+    </header>
+    <section class="text-section">
+      <p>BLK LUV [org] matches all business donations 1 for 1 with ONE $LUV and a LUV NFT as proof of a donation. </p>
+    </section>
         <div class="sr-container">
           <section class="container">
-            <h1>One-time Donation</h1>
+            <h1>Donate One-time</h1>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4JYXyvvRb2sX"
+          >
+            Donate $50.00
+          </button>
             <button
               data-checkout-mode="payment"
               data-price-id="sku_GU4JYXyvvRb2sX"
             >
-              Donate $5.00 once
+              Donate $100.00
             </button>
             <button
               data-checkout-mode="payment"
               data-price-id="sku_GU4KO8nfdg8G2Z"
             >
-              Donate $15.00 once
+              Donate $500.00
             </button>
             <button
               data-checkout-mode="payment"
               data-price-id="sku_GU4LB0wBViiYsm"
             >
-              Donate $50.00 once
+              Donate $1,000.00
             </button>
-          </section>
-          <section class="container">
-            <h1>Recurring Donation</h1>
             <button
-              data-checkout-mode="subscription"
-              data-price-id="plan_GU4MXg0k0Uv1S6"
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4JYXyvvRb2sX"
             >
-              Donate $20.00 per month
+              Donate $2,000.00
+            </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+              Donate $5,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $10,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $50,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $100,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $500,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $1,000,000.00
+            </button>
+            </section>
+            <section class="container">
+            <h1>Donate Monthly</h1>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4JYXyvvRb2sX"
+          >
+            Donate $50.00
+          </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4JYXyvvRb2sX"
+            >
+              Donate $100.00
+            </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+              Donate $500.00
+            </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4LB0wBViiYsm"
+            >
+              Donate $1,000.00
+            </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4JYXyvvRb2sX"
+            >
+              Donate $2,000.00
+            </button>
+            <button
+              data-checkout-mode="payment"
+              data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+              Donate $5,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $10,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $50,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $100,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $500,000.00
+            </button>
+            <button
+            data-checkout-mode="payment"
+            data-price-id="sku_GU4KO8nfdg8G2Z"
+            >
+            Donate $1,000,000.00
             </button>
           </section>
         </div>
         <div id="error-message"></div>
       </div>
-    </div>
-    <div class="banner">
-      <span>
-        This is a
-        <a href="https://github.com/stripe-samples"> Stripe Sample </a> on how
-        to use Stripe Checkout on GitHub Pages.
-        <a
-          href="https://github.com/stripe-samples/github-pages-stripe-checkout"
-        >
-          View code on GitHub.
-        </a>
-      </span>
     </div>
 
     <script>
