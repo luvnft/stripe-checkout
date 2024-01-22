@@ -50,33 +50,43 @@ h4 {
 /* Layout */
 .sr-root {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 980px;
-  padding: 48px;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: auto;
-  min-height: 100vh;
-  margin: 0 auto;
+  height: 100vh;
 }
 
 .sr-header {
-  margin-bottom: 32px;
+  margin-bottom: -66px;
+  text-align: center;
 }
 
 .sr-header__logo {
-  background-image: var(--logo-image);
-  height: 24px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  text-align: left;
+  margin-top: 10px; /* Adjust this value as needed */
+  margin-bottom: 16px;
 }
 
 .sr-header__logo img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+.container {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 250px;
 }
 
 .sr-payment-summary {
