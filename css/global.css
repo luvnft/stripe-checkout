@@ -62,7 +62,7 @@ h4 {
 }
 
 .sr-header__logo {
-  margin-top: 20px; /* Adjust this value as needed */
+  margin-top: 20px; /* Adjust this value as needed for mobile */
   margin-bottom: 16px;
 }
 
@@ -320,6 +320,11 @@ button {
   display: block;
 }
 
+button a {
+  color: white; /* Set the desired text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
 button:hover {
   filter: contrast(115%);
 }
@@ -386,16 +391,20 @@ pre {
     background-position: center;
   }
 
-  .sr-payment-summary {
-    text-align: center;
-  }
-
+  .sr-payment-summary,
   .sr-content {
-    display: none;
+    text-align: center;
+    display: block;
   }
 
   .sr-main {
     width: 100%;
+    padding-left: 0;
+  }
+
+  .container {
+    max-width: 100%; /* Set maximum width to 100% for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
   }
 }
 
